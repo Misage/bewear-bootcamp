@@ -5,7 +5,7 @@ import { useState } from "react";
 
 import { Button } from "@/components/ui/button";
 
-import AddToCartButton from "./add-to-cart-button";
+import AddToCartButton from "./add-to-cart-button.tsx";
 
 interface ProductActionsProps {
   productVariantId: string;
