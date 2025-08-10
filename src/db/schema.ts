@@ -61,10 +61,10 @@ export const verificationTable = pgTable("verification", {
   value: text("value").notNull(),
   expiresAt: timestamp("expires_at").notNull(),
   createdAt: timestamp("created_at").$defaultFn(
-    () => new Date(),
+    () => /* @__PURE__ */ new Date(),
   ),
   updatedAt: timestamp("updated_at").$defaultFn(
-    () => new Date(),
+    () => /* @__PURE__ */ new Date(),
   ),
 });
 
